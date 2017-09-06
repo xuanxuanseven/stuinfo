@@ -2,11 +2,18 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<style type="text/css">
+div{margin:0;padding:0}
+#container{width:1200px;height:800px;border:1px solid #ccc;}
+#container .box1{width:500px;height:800px;float: left;background:grey;}
+#container .box2{margin-left: 40px;width:500px;height:800px;float:left;background:grey;}
+</style>
+
 <script src="../../../jquery/jquery-3.2.1.js"></script>
 <script>
    $(document).ready(function(){
-	   
-	   $("#div1").html("对酒当歌，人生几何！<br />譬如朝露，去日苦多。<br />慨当以慷，忧思难忘。<br />何以解忧？唯有杜康。<br />青青子衿，悠悠我心。<br />但为君故，沉吟至今。<br />呦呦鹿鸣，食野之苹。<br />我有嘉宾，鼓瑟吹笙。<br />明明如月，何时可掇？<br />忧从中来，不可断绝。<br />越陌度阡，枉用相存。<br />契阔谈，心念旧恩。<br />月明星稀，乌鹊南飞。<br />绕树三匝，何枝可依？<br />山不厌高，海不厌深。<br />周公吐哺，天下归心。");
+	  
 	   $("#btn1").click(function(){
 		   //alert('jkl');
 		   $.ajax({
@@ -96,6 +103,8 @@
 </head>
 
 <body background="">
+<div id="container">
+<div class="box1">
 
 <h4>学生信息表</h4>
 
@@ -160,5 +169,27 @@
 <textarea id='textarea1' cols=40 rows=4></textarea>
 <button id='btn5'>确定</button>
 <div id='div2'></div>
+</div>
+
+<div class="box2">
+对酒当歌，人生几何！
+譬如朝露，去日苦多。
+慨当以慷，忧思难忘。
+何以解忧？唯有杜康。
+青青子衿，悠悠我心。
+但为君故，沉吟至今。
+呦呦鹿鸣，食野之苹。
+我有嘉宾，鼓瑟吹笙。
+明明如月，何时可掇？
+忧从中来，不可断绝。
+越陌度阡，枉用相存。
+契阔谈，心念旧恩。
+月明星稀，乌鹊南飞。
+绕树三匝，何枝可依？
+山不厌高，海不厌深。
+周公吐哺，天下归心。
+</div>
+</div>
+
 </body>
 </html>
